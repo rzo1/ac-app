@@ -6,7 +6,7 @@ import jakarta.ejb.Stateless;
 @Stateless
 public class MyServiceWithMyResource {
 
-    @Resource(name = "medicalAbbreviations")
+    @Resource
     private MyResource myResource;
 
     public MyResource getMyResource() {
