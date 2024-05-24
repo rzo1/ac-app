@@ -12,7 +12,7 @@ import java.util.Properties;
 public class App {
 
     @Module
-    @Classes(cdi = true, value = {App.class, MyServiceWithMyResource.class})
+    @Classes(cdi = true, value = {App.class, MyServiceWithMyResource.class, MyResourceInjectionTest.class})
     public EjbJar modules() {
         return new EjbJar();
     }
