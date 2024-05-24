@@ -27,7 +27,7 @@ public class App {
         return p;
     }
 
-    @Resource(name = "medicalAbbreviations")
+    @Resource(name = "MyResource")
     private MyResource resource;
 
     public MyResource getResource() {
@@ -37,4 +37,5 @@ public class App {
     public void setResource(MyResource resource) {
         this.resource = resource;
     }
+
 }

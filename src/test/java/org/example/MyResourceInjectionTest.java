@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @RunWithApplicationComposer(mode = ExtensionMode.PER_JVM)
 public class MyResourceInjectionTest {
 
-    @Resource
+    @Resource(name="MyResource")
     private MyResource myResource;
 
     @Inject
