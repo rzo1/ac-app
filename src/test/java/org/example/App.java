@@ -20,14 +20,14 @@ public class App {
     @Configuration
     public Properties config() {
         final Properties p = new Properties();
-        p.put("MyResource", "new://Resource?class-name=org.example.MyResource" +
+        p.put("myResource", "new://Resource?class-name=org.example.MyResource" +
                 "&constructor=filePath, splitChar");
-        p.put("MyResource.filePath", "file.txt");
-        p.put("MyResource.splitChar", ";");
+        p.put("myResource.filePath", "file.txt");
+        p.put("myResource.splitChar", ";");
         return p;
     }
 
-    @Resource(name = "medicalAbbreviations")
+    @Resource(name = "myResource")
     private MyResource resource;
 
     public MyResource getResource() {

@@ -9,7 +9,7 @@ public class MyServiceWithMyResource {
     @Resource
     private MyResource myResource;
 
-    public MyResource getMyResource() {
+    public MyResource getResource() {
         return myResource;
     }
 }
